@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Forever ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts-bg" id="heartsContainer"></div>
+
+    <div class="container">
+        <!-- Entry Page -->
+        <div class="entry-page" id="entryPage">
+            <div class="entry-card">
+                <h1>Welcome to Our World 💕</h1>
+                <p>Enter the magic word to explore our journey together</p>
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        class="magic-input" 
+                        id="magicWord" 
+                        placeholder="magic word here..."
+                        autocomplete="off"
+                    >
+                    <div class="error-msg" id="errorMsg">Oops! Try again 💕</div>
+                </div>
+                <button class="enter-btn" onclick="checkMagicWord()">Enter Our World</button>
+            </div>
+        </div>
+
+        <!-- Gallery Page -->
+        <div class="gallery-page" id="galleryPage">
+            <div class="gallery-header">
+                <h1>Us Forever 💑</h1>
+                <p class="subtitle">Our Love Story & Future Together</p>
+            </div>
+
+            <div class="section-tabs">
+                <button class="tab-btn active" onclick="showSection('photos')">📸 Photos</button>
+                <button class="tab-btn" onclick="showSection('videos')">🎬 Videos</button>
+                <button class="tab-btn" onclick="showSection('songs')">🎵 Our Songs</button>
+                <button class="tab-btn" onclick="showSection('plans')">🌟 Our Future</button>
+                <button class="tab-btn" onclick="showSection('message')">💌 Message</button>
+            </div>
+
+           <!-- Photos Section -->
+<div class="section-content active" id="photos">
+  <div class="media-grid">
+
+    <div class="media-card">
+      <img src="image/first date.jpg" alt="First Date">
+      <div class="media-caption">First Date</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/first flower.jpg" alt="Flowers">
+      <div class="media-caption">When I gave you flowers</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/smile.jpg" alt="Smile">
+      <div class="media-caption">Your beautiful smile</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/sunset.jpg" alt="Sunset">
+      <div class="media-caption">Sunset together</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/birthday.jpg" alt="Birthday">
+      <div class="media-caption">Birthday celebration</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/pizza.jpg" alt="Pizza">
+      <div class="media-caption">Pizza night</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/new year.jpg" alt="Carnival">
+      <div class="media-caption">New Year</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/silly.jpg" alt="Carnival">
+      <div class="media-caption">Me being silly</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/cofee.jpg" alt="Coffee">
+      <div class="media-caption">Coffee date</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/night.jpg" alt="Night Date">
+      <div class="media-caption">Night date</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/art.jpg" alt="Art">
+      <div class="media-caption">Art gallery visit</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/beach.jpg" alt="Beach">
+      <div class="media-caption">Beach day</div>
+    </div>
+
+    <div class="media-card">
+      <img src="image/theater.jpg" alt="Theater">
+      <div class="media-caption">Theater night</div>
+    </div>
+
+  </div>
+</div>
+
+                 
+            <!-- Videos Section -->
+            <div class="section-content" id="videos">
+                <div class="media-grid">
+                    <div class="media-card">
+                        <div class="media-placeholder">
+                            🎬
+                            <div class="play-icon">▶️</div>
+                        </div>
+                        <div class="media-caption">Our happy day</div>
+                    </div>
+                    <div class="media-card">
+                        <div class="media-placeholder">
+                            📹
+                            <div class="play-icon">▶️</div>
+                        </div>
+                        <div class="media-caption">Cooking fail</div>
+                    </div>
+                    <div class="media-card">
+                        <div class="media-placeholder">
+                            🎬
+                            <div class="play-icon">▶️</div>
+                        </div>
+                        <div class="media-caption">Road trip</div>
+                    </div>
+                    <div class="media-card">
+                        <div class="media-placeholder">
+                            🎥
+                            <div class="play-icon">▶️</div>
+                        </div>
+                        <div class="media-caption">Karaoke night</div>
+                    </div>
+                    <div class="media-card">
+                        <div class="media-placeholder">
+                            📹
+                            <div class="play-icon">▶️</div>
+                        </div>
+                        <div class="media-caption">Your laugh compilation</div>
+                    </div>
+                    <div class="media-card">
+                        <div class="media-placeholder">
+                            🎬
+                            <div class="play-icon">▶️</div>
+                        </div>
+                        <div class="media-caption">Surprise moment</div>
+                    </div>
+                    <div class="media-card">
+                        <div class="media-placeholder">
+                            🎥
+                            <div class="play-icon">▶️</div>
+                        </div>
+                        <div class="media-caption">Movie date vlog</div>
+                    </div>
+                    <div class="media-card">
+                        <div class="media-placeholder">
+                            🎬
+                            <div class="play-icon">▶️</div>
+                        </div>
+                        <div class="media-caption">Us being cute</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Songs Section -->
+            <div class="section-content" id="songs">
+                <div class="songs-section">
+                    <div class="song-card">
+                        <div class="song-icon">🎵</div>
+                        <div class="song-info">
+                            <div class="song-title">Our Song</div>
+                            <div class="song-artist">Artist Name</div>
+                            <div class="song-note">The song that was playing when we first met</div>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-icon">💕</div>
+                        <div class="song-info">
+                            <div class="song-title">Perfect</div>
+                            <div class="song-artist">Ed Sheeran</div>
+                            <div class="song-note">Our first dance song</div>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-icon">🎶</div>
+                        <div class="song-info">
+                            <div class="song-title">Your Favorite Song</div>
+                            <div class="song-artist">Artist Name</div>
+                            <div class="song-note">The one you always hum</div>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-icon">🌙</div>
+                        <div class="song-info">
+                            <div class="song-title">Moonlight Serenade</div>
+                            <div class="song-artist">Artist Name</div>
+                            <div class="song-note">Our late night talks song</div>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-icon">🎤</div>
+                        <div class="song-info">
+                            <div class="song-title">Karaoke Anthem</div>
+                            <div class="song-artist">Artist Name</div>
+                            <div class="song-note">Our go-to duet</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Plans Section -->
+            <div class="section-content" id="plans">
+                <div class="plans-section">
+                    <!-- Wedding Plan -->
+                    <div class="plan-card" onclick="togglePlan('wedding')">
+                        <div class="plan-header">
+                            <div class="plan-icon">💒</div>
+                            <div class="plan-title-group">
+                                <h3>Our Dream Wedding</h3>
+                                <div class="plan-year">Target: 2026</div>
+                            </div>
+                        </div>
+                        <div class="plan-body closed" id="wedding">
+                            <p class="plan-details">
+                                Imagine a beautiful ceremony surrounded by our loved ones. A day filled with joy, laughter, and the promise of forever. We'll exchange vows under a flower arch, dance until our feet hurt, and start our forever as husband and wife.
+                            </p>
+                            <div class="plan-highlights">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🌸</div>
+                                    Garden Venue
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">👗</div>
+                                    Your Dream Dress
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🎵</div>
+                                    Live Band
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🍰</div>
+                                    5-Tier Cake
+                                </div>
+                            </div>
+                        </div>
+                        <div class="click-indicator">Click to see details ✨</div>
+                    </div>
+
+                    <!-- Honeymoon Travel Plan -->
+                    <div class="plan-card" onclick="togglePlan('travel')">
+                        <div class="plan-header">
+                            <div class="plan-icon">✈️</div>
+                            <div class="plan-title-group">
+                                <h3>Our Travel Adventures</h3>
+                                <div class="plan-year">Starting: 2026</div>
+                            </div>
+                        </div>
+                        <div class="plan-body closed" id="travel">
+                            <p class="plan-details">
+                                Let's explore the world together! From romantic honeymoon in Paris to adventure trips in Japan, beach relaxation in the Maldives, and exploring the historic streets of Italy. Every journey will be a new chapter in our story.
+                            </p>
+                            <div class="plan-highlights">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🗼</div>
+                                    Paris
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🗾</div>
+                                    Japan
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🏝️</div>
+                                    Maldives
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🍝</div>
+                                    Italy
+                                </div>
+                            </div>
+                        </div>
+                        <div class="click-indicator">Click to see details ✨</div>
+                    </div>
+
+                    <!-- House Plan -->
+                    <div class="plan-card" onclick="togglePlan('house')">
+                        <div class="plan-header">
+                            <div class="plan-icon">🏡</div>
+                            <div class="plan-title-group">
+                                <h3>Our Dream Home</h3>
+                                <div class="plan-year">Target: 2028</div>
+                            </div>
+                        </div>
+                        <div class="plan-body closed" id="house">
+                            <p class="plan-details">
+                                A cozy home where we'll build our family. A spacious backyard for the kids to play, a modern kitchen where we'll cook together, a beautiful master bedroom, and a home office for our dreams. It will be filled with love, laughter, and countless memories.
+                            </p>
+                            <div class="plan-highlights">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🛏️</div>
+                                    4 Bedrooms
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🌳</div>
+                                    Big Backyard
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🍳</div>
+                                    Modern Kitchen
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🏊</div>
+                                    Swimming Pool
+                                </div>
+                            </div>
+                        </div>
+                        <div class="click-indicator">Click to see details ✨</div>
+                    </div>
+
+                    <!-- Family Plan -->
+                    <div class="plan-card" onclick="togglePlan('family')">
+                        <div class="plan-header">
+                            <div class="plan-icon">👨‍👩‍👧‍👦</div>
+                            <div class="plan-title-group">
+                                <h3>Our Beautiful Family</h3>
+                                <div class="plan-year">Starting: 2029</div>
+                            </div>
+                        </div>
+                        <div class="plan-body closed" id="family">
+                            <p class="plan-details">
+                                Five beautiful children to complete our family! We'll raise them with love, kindness, and teach them to chase their dreams. Imagine family dinners, game nights, vacations together, and watching them grow into amazing people. Our home will be filled with endless love and joy.
+                            </p>
+                            <div class="plan-highlights">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">👶</div>
+                                    Baby 1
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">👶</div>
+                                    Baby 2
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">👶</div>
+                                    Baby 3
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">👶</div>
+                                    Baby 4
+                                </div>
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">👶</div>
+                                    Baby 5
+                                </div>
+                            </div>
+                        </div>
+                        <div class="click-indicator">Click to see details ✨</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Section -->
+                 <div class="message-section">
+                    <div class="message-box closed" id="messageBox" onclick="openMessage()">
+                        <div class="click-prompt">
+                            <div class="envelope-icon">💌</div>
+                            <h2>A Love Letter For You</h2>
+                            <p>Click to open and read my heart ❤️</p>
+                        </div>
+                        <div class="message-content">
+                            <h2>To My Beautiful Honey, Mary Ann Kimpan 👑</h2>
+                            <p>My dearest Honey, from the very first moment our eyes met, my heart whispered "she's the one." You didn't just walk into my life - you became my life, my reason for smiling, my greatest blessing.</p>
+                            <p>Mary Ann, you are the most precious gift God has ever given me. Your beautiful smile lights up even my darkest days. Your gentle touch heals every worry. Your sweet laugh is my favorite melody. Every single day with you feels like I'm living in a dream I never want to wake up from.</p>
+                            <p>You are not just my girlfriend, Honey - you are my best friend who knows every part of my soul, my partner who stands beside me through everything, my soulmate who completes me in ways I never knew I needed. When I look at you, I see my forever, my home, my entire world.</p>
+                            <p>I promise you, my beautiful Mary Ann, that I will love you deeper than the ocean, higher than the stars, and longer than forever. I will protect your heart, cherish your dreams, and spend every breath making sure you feel loved, appreciated, and adored. When you're happy, I'll celebrate with you. When you're sad, I'll be your shoulder to cry on. When you're scared, I'll be your courage. When you're tired, I'll be your strength.</p>
+                            <p>I promise to wake up every morning grateful that you're mine, and fall asleep every night thanking God for you. I'll never stop trying to make you smile, never stop showing you how much you mean to me, and never, ever stop choosing you - in every moment, in every situation, for all of my days.</p>
+                            <p>Our future together, Honey, is the most beautiful dream. I can't wait to mary you and call you my wife. To build our dream home where our children will grow up surrounded by love. To travel the world hand in hand, creating memories in every corner of the earth. To raise our five beautiful babies together, teaching them about love by showing them how deeply I love their mother.</p>
+                            <p>You are my yesterday, my today, and all of my tomorrows. You are my first thought in the morning and my last prayer at night. You are everything I ever hoped for and so much more than I ever deserved.</p>
+                            <p style="margin-top: 30px; font-weight: 600; font-size: 24px; color: #e91e63;">I love you with all my heart, all my soul, and all that I am, my beautiful Mary Ann Kimpan. Forever and always. ❤️</p>
+                            <p style="margin-top: 15px; font-weight: 600; font-size: 20px; color: #c2185b;">- Your Forever Love, Your Best Friend, Your Soulmate 💕</p>
+                            <p style="margin-top: 10px; font-style: italic; color: #999; font-size: 16px;">P.S. Thank you for making me the luckiest person alive. You are my everything, Honey. 🥰</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
